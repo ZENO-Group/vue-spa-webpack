@@ -1,3 +1,5 @@
+#Forked Version based on vue-cli 2.0
+
 # vue-webpack-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
