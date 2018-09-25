@@ -1,7 +1,6 @@
-# Forked vue-webpack-boilerplate
+# VueSPA-Boilerplate
 
-# Feature List
-
+## Features:
 ## Already Supports ...
 
 - [x] Standard SPA Structure
