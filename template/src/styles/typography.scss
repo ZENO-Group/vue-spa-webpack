@@ -1,0 +1,18 @@
+/* font-size definition */
+/* sm, med, lg, extra-lg */
+$font-size-base: 12px;
+$font-size-sm: $font-size-base; // 12
+$font-size-med: $font-size-base + 2px; // 14
+$font-size-lg: $font-size-base + 4px;  // 16
+$font-size-extra-lg: $font-size-base + 6px; // 18
+
+/* font-weight definition */
+/* light, regular, medium, heavy */
+$font-weight-base: 300;
+$font-weight-light: $font-weight-base; // 300
+$font-weight-regular: $font-weight-base + 100; // 400
+$font-weight-medium: $font-weight-base + 200; // 500
+$font-weight-heavy: $font-weight-base + 300; // 600
+
+/* line-height mixin */
+/* todo: implement line-height generation mixin based on font-size */

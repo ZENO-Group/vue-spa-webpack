@@ -41,7 +41,30 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true
+    cssSourceMap: true,
+
+    proxyTable: {
+    '/api': {
+      target: 'http://debug-domain.com/', // http://localhost/api/{certain-api} ---> http://debug-domain.com/api/{certain-api}
+        secure: false,
+        changeOrigin: true,
+        /*
+        pathRewrite: {
+        '^/api': ''
+        */
+      }
+      //cookieDomainRewrite: true
+    },
+    //同源策略限制 无法跨域请求 只能添加代理
+    '/mock':{
+      target: 'http://mock-domain.com/', // http://localhost/mock/{certain-api} ---> http://debug-domain.com/mock/{certain-api}
+        secure: false,
+        changeOrigin: true
+      // pathRewrite: {
+      //   '^/mock': ''
+      // }
+    }
+  },
   },
 
   build: {
