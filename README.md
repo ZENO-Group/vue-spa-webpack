@@ -40,5 +40,5 @@ $ npm run dev
 ```
 
 ``` bash
-vue init username/repo my-project
+vue init ZENO-Group/vue-spa-webpack my-project
 ```
