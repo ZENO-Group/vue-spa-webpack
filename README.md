@@ -1,6 +1,6 @@
 # VueSPA-Boilerplate
 
-### Already Supports ...
+### Already Supports 
 
 - [x] Standard SPA Structure
 - [x] ES6, 7 Supports
@@ -16,7 +16,7 @@
 - [x] Useful layouts
 - [x] SCSS usage support
 
-### ToDo List ...
+### ToDo List 
 - [ ] Standard samples of component that using v-model
 - [ ] SCSS standard usage by BEM naming convention
 - [ ] i18n full support
