@@ -3,7 +3,7 @@
 ### Already Supports 
 
 - [x] Standard SPA Structure
-- [x] ES6, 7 Supports
+- [x] ES6, 7 Features
 - [x] Webpack Dev HotLoad
 - [x] Frontend store support by Vuex
 - [x] API configurations that support different environment: dev(cross-domain-support), qa, stg, prod
