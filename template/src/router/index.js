@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const env = process.env.NODE_ENV
-const ENV_LIST = {
-  'development': './import.dev.js',
-  'production': './import.prod.js'
+const CURRENT_ENV = process.env.NODE_ENV
+const ENV_CONFIG = {
+  'development': 'import.dev.js',
+  'production': 'import.prod.js'
 }
-const _import = require(ENV_LIST[env])
+const IMPORT_PATH = `./${ENV_CONFIG[CURRENT_ENV]}`
+const _import = require(IMPORT_PATH)
 
 Vue.use(Router)
 
