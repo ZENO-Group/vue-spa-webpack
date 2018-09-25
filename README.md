@@ -1,6 +1,6 @@
-#Forked vue-webpack-boilerplate that based on vue-cli 2.0
+# Forked vue-webpack-boilerplate
 
-#Feature List
+# Feature List
 
 ## Already Supports ...
 
@@ -18,13 +18,13 @@
 - [x] SCSS usage support by BEM standard
 
 ## ToDo List ...
-- [-] i18n full support
-- [-] useful vue mixins
-- [-] useful vue plugins
-- [-] useful iconfont
-- [-] useful components
-- [-] chart support
-- [-] basic views: dashboard, login, reset-password
+- [ ] i18n full support
+- [ ] useful vue mixins
+- [ ] useful vue plugins
+- [ ] useful iconfont
+- [ ] useful components
+- [ ] chart support
+- [ ] basic views: dashboard, login, reset-password
 
 # vue-webpack-boilerplate
 
