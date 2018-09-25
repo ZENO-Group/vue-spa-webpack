@@ -6,8 +6,8 @@ const ENV_CONFIG = {
   'development': 'import.dev.js',
   'production': 'import.prod.js'
 }
-const IMPORT_PATH = `./${ENV_CONFIG[CURRENT_ENV]}`
-const _import = require(IMPORT_PATH)
+
+const importComponent = require("./" + ENV_CONFIG[CURRENT_ENV])
 
 Vue.use(Router)
 
@@ -15,17 +15,17 @@ Vue.use(Router)
 import MainLayout from '@/layouts/MainLayout'
 
 export const constantRouterMap = [
-  { path: '/login', component: _import('app/login/index'), hidden: true, name: 'login' },
-  { path: '/401', component: _import('error/401/index'), hidden: true },
-  { path: '/404', component: _import('error/404/index'), hidden: true },
+  { path: '/login', component: importComponent('app/login/index'), hidden: true, name: 'login' },
+  { path: '/401', component: importComponent('error/401/index'), hidden: true },
+  { path: '/404', component: importComponent('error/404/index'), hidden: true },
   {
     path: '',
     component: MainLayout,
     redirect: 'dashboard',
-    meta: { title: '首页', icon: '' },
+    meta: { title: '', icon: '' },
     children: [{
       path: 'dashboard',
-      component: _import('dashboard/index'),
+      component: importComponent('dashboard/index'),
       name: 'dashboard'
     }]
   },
