@@ -6,6 +6,7 @@
     <div class="main">
       <!-- todo: component => topBar -->
       <!-- todo: component => mainContent -->
+      <router-view></router-view>
     </div>
   </BaseLayout>
 </template>

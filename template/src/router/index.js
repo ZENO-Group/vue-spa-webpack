@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-const _import = require(ENV_LIST[process.env.NODE_ENV])
+
+const env = process.env.NODE_ENV
+const ENV_LIST = {
+  'development': './import.dev.js',
+  'production': './import.prod.js'
+}
+const _import = require(ENV_LIST[env])
 
 Vue.use(Router)
 
@@ -25,11 +31,6 @@ export const constantRouterMap = [
   { path: '*', redirect: '/404', hidden: true }
 
 ]
-
-const ENV_LIST = {
-  'development': './import.dev.js',
-  'production': './import.prod.js'
-}
 
 export default new Router({
   scrollBehavior: () => ({ y: 0 }),
