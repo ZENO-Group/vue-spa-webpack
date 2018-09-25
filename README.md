@@ -4,8 +4,8 @@
 ### Already Supports ...
 
 - [x] Standard SPA Structure
+- [x] ES6, 7 Supports
 - [x] Webpack Dev HotLoad
-- [x] Standard samples of component that using v-model
 - [x] Frontend store support by Vuex
 - [x] API configurations that support different environment: dev(cross-domain-support), qa, stg, prod
 - [x] Axios standard usage as HttpRequestUtil
@@ -15,9 +15,11 @@
 - [x] Useful validation regex
 - [x] Base UI framework by Element-UI
 - [x] Useful layouts
-- [x] SCSS usage support by BEM standard
+- [x] SCSS usage support
 
 ### ToDo List ...
+- [ ] Standard samples of component that using v-model
+- [ ] SCSS standard usage by BEM naming convention
 - [ ] i18n full support
 - [ ] useful vue mixins
 - [ ] useful vue plugins
