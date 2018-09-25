@@ -1,6 +1,5 @@
 # VueSPA-Boilerplate
 
-## Features:
 ### Already Supports ...
 
 - [x] Standard SPA Structure
