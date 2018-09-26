@@ -2,6 +2,7 @@
   <BaseLayout>
     <div class="sidebar">
       <!-- todo: component => sideBar -->
+      <sidebar></sidebar>
     </div>
     <div class="main">
       <!-- todo: component => topBar -->
@@ -12,9 +13,10 @@
 </template>
 <script>
   import BaseLayout from '@/layouts/BaseLayout'
+  import { Sidebar } from '@/components'
   export default {
     components: {
-      BaseLayout
+      BaseLayout, Sidebar
     },
     props: {},
     data() {
