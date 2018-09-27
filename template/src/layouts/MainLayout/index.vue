@@ -11,7 +11,7 @@
         <div class="main-content">
           <el-breadcrumb class="no-select" v-if="breadcrumb" separator="/">
             <template v-for="route in currentRoute">
-              <el-breadcrumb-item :key="route.path" :to="{ path: route.path }">{{ route.meta | showDisplay }}</el-breadcrumb-item>
+              <el-breadcrumb-item :key="route.path" :to="{ path: route.path }">{{ route.meta.display }}</el-breadcrumb-item>
             </template>
           </el-breadcrumb>
           <router-view></router-view>
@@ -33,11 +33,6 @@ export default {
   data () {
     return {
       routes: []
-    }
-  },
-  filters: {
-    showDisplay(meta) {
-      return meta.display
     }
   },
   computed: {
