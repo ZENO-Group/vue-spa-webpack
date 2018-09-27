@@ -1,12 +1,25 @@
 .latest-orders {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .box-card {
   width: 30%;
+  height: 300px;
   margin-right: 20px;
   margin-top: 20px;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+  transition-property: all;
+  &--active {
+    width: 100%;
+    height: 500px;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    animation: active 0.5s;
+  }
 }
 
 .op-list {
@@ -25,5 +38,24 @@
     background: #e4e4e4;
     height: 20px;
     width: 100%;
+  }
+}
+
+@keyframes active {
+  0% {
+    background: #fff;
+    border:5px solid #409EFF;
+  }
+  25% {
+    background: #fbfdff;
+  }
+  50% {
+    background: #fbfdff;
+  }
+  75% {
+    background: #fbfdff;
+  }
+  100% {
+    background: #fff;
   }
 }

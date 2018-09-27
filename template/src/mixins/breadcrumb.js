@@ -1,6 +1,6 @@
 export default {
-  created() {
+  created () {
     const { breadcrumb = true } = this.$route.meta
-    this.$store.dispatch('changeBreadCrumb', breadcrumb)
+    this.$store.dispatch('ChangeBreadCrumb', breadcrumb)
   }
 }
