@@ -16,3 +16,9 @@ $font-weight-heavy: $font-weight-base + 300; // 600
 
 /* line-height mixin */
 /* todo: implement line-height generation mixin based on font-size */
+
+
+/* h1 */
+h1 {
+  font-size: $font-size-extra-lg;
+}

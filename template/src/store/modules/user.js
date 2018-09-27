@@ -34,7 +34,7 @@ const user = {
   },
 
   actions: {
-    LoginByUsername({ commit }, userInfo) {
+    LoginByUsername ({ commit }, userInfo) {
       const ERR_MSG = ''
       const username = userInfo.username.trim()
       return new Promise((resolve, reject) => {
@@ -55,7 +55,7 @@ const user = {
         })
       })
     },
-    GetUserInfo({ commit, state }) {
+    GetUserInfo ({ commit, state }) {
       return new Promise((resolve, reject) => {
         const token = state.token
         const ERR_MSG = ''
@@ -83,7 +83,7 @@ const user = {
       })
     },
     /* logout => server-side */
-    LogOut({ commit }, payload) {
+    LogOut ({ commit }, payload) {
       return new Promise((resolve, reject) => {
         logout().then(() => {
           commit('SET_TOKEN', '')
@@ -96,7 +96,7 @@ const user = {
       })
     },
     /* frontend logout */
-    FedLogOut({ commit }) {
+    FedLogOut ({ commit }) {
       return new Promise(resolve => {
         commit('SET_TOKEN', '')
         commit('SET_USER_IS_LOADED', false)
@@ -105,7 +105,7 @@ const user = {
       })
     },
     /* frontend logout => login page */
-    FedLogOutToLogin({ commit, dispatch }) {
+    FedLogOutToLogin ({ commit, dispatch }) {
       return new Promise(resolve => {
         dispatch('FedLogOut').then(() => {
           Router.push({ name: 'login' })

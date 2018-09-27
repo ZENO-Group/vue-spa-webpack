@@ -13,7 +13,7 @@ export default {
     ERROR: {
       TIMEOUT: '',
       INTERNAL: '',
-      NOTFOUND: '',
+      NOTFOUND: ''
     }
   }
 }

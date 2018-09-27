@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-export function loginByUsername(username, password) {
+export function loginByUsername (username, password) {
   return request({
     url: '', // todo: replace with loginByUsername url
     method: 'post',
@@ -17,7 +17,7 @@ export function loginByUsername(username, password) {
   })
 }
 
-export function logout() {
+export function logout () {
   return request({
     url: '', // todo: replace with logout url
     method: 'post',
@@ -25,7 +25,7 @@ export function logout() {
   })
 }
 
-export function getUserInfo() {
+export function getUserInfo () {
   return request({
     url: '', // todo: replace with getUserInfo url
     method: 'post',
