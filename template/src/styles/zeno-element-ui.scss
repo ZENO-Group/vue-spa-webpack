@@ -28,3 +28,24 @@
   right: 0;
   background-color: #8a2be2;
 }
+
+.el-card__body {
+  //width: 100%;
+}
+
+.el-form--label-top .el-form-item__label {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  padding: 0;
+}
+
+.el-form--label-top {
+  .el-form-item {
+    margin-bottom: 5px;
+  }
+}
+
+.el-input__inner {
+  font-weight: 300;
+}

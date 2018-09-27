@@ -1,6 +1,6 @@
-# {{ name }}
+# zeno-template-development
 
-> {{ description }}
+> A Vue.js project
 
 ## Build Setup
 
