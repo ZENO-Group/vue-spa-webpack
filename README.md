@@ -1,44 +1,16 @@
-# VueSPA-Boilerplate
+# zeno-template-development
 
-### Already Supports 
+> A Vue.js project
 
-- [x] Standard SPA Structure
-- [x] ES6, 7 Features
-- [x] Webpack Dev HotLoad
-- [x] Frontend store support by Vuex
-- [x] API configurations that support different environment: dev(cross-domain-support), qa, stg, prod
-- [x] Axios standard usage as HttpRequestUtil
-- [x] Cookie support
-- [x] Global filters
-- [x] Frontend auth control based on "resource-code"
-- [x] Useful validation regex
-- [x] Base UI framework by Element-UI
-- [x] Useful layouts
-- [x] SCSS usage support
-
-### ToDo List 
-- [ ] Standard samples of component that using v-model
-- [ ] SCSS standard usage by BEM naming convention
-- [ ] i18n full support
-- [ ] useful vue mixins
-- [ ] useful vue plugins
-- [ ] useful iconfont
-- [ ] useful components
-- [ ] chart support
-- [ ] basic views: dashboard, login, reset-password
-
-### Usage
-
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
+## Build Setup
 
 ``` bash
-$ npm install -g vue-cli
-$ vue init webpack my-project
-$ cd my-project
-$ npm install
-$ npm run dev
-```
+# install dependencies
+npm install
 
-``` bash
-vue init ZENO-Group/vue-spa-webpack my-project
-```
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+

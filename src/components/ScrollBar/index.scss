@@ -1,0 +1,13 @@
+@import '../../styles/color.scss';
+@import '../../styles/app.scss';
+
+.scroll-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  .scroll-wrapper {
+    position: absolute;
+    width: 100%!important;
+  }
+}
