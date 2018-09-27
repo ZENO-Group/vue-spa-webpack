@@ -1,3 +1,5 @@
+@import './common.scss';
+
 .latest-orders {
   display: flex;
   flex-wrap: wrap;
@@ -25,20 +27,6 @@
 .op-list {
   margin-top: 10px;
   display: flex;
-}
-
-.skeleton {
-  margin:0 0 30px 0;
-  padding:0;
-  li {
-    list-style: none;
-    padding: 10px;
-    margin:15px 0;
-    box-sizing: border-box;
-    background: #e4e4e4;
-    height: 20px;
-    width: 100%;
-  }
 }
 
 @keyframes active {

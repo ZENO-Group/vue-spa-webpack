@@ -15,14 +15,14 @@
 - [x] Base UI framework by Element-UI
 - [x] Useful layouts
 - [x] SCSS usage support
+- [x] SCSS standard usage by BEM naming convention
+- [x] useful iconfont
 
 ### ToDo List 
 - [ ] Standard samples of component that using v-model
-- [ ] SCSS standard usage by BEM naming convention
 - [ ] i18n full support
 - [ ] useful vue mixins
 - [ ] useful vue plugins
-- [ ] useful iconfont
 - [ ] useful components
 - [ ] chart support
 - [ ] basic views: dashboard, login, reset-password

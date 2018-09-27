@@ -1,3 +1,4 @@
-export default {
-
+import BreadCrumb from './breadcrumb'
+export {
+  BreadCrumb
 }
