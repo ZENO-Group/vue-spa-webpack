@@ -1,8 +1,9 @@
 @import '../../styles/color.scss';
 @import '../../styles/typography.scss';
+@import '../../styles/layout.scss';
 
 .paper {
-  background-color:$background;
+  background-color:$background-primary;
   padding:$padding-lg;
   z-index: 3;
   overflow: hidden;

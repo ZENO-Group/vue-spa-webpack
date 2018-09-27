@@ -11,7 +11,7 @@ const app = {
 
   actions: {
     // auth manage
-    GenerateRoutes({ commit }) {
+    GenerateRoutes ({ commit }) {
       return new Promise(resolve => {
         commit('SET_ROUTES', [])
         resolve()

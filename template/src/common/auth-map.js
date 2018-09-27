@@ -8,6 +8,6 @@ export default {
       resourceCode: '',
       path: '',
       children: []
-    },
+    }
   ]
 }

@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+/* Layout */
+import MainLayout from '@/layouts/MainLayout'
+
 const CURRENT_ENV = process.env.NODE_ENV
 const ENV_CONFIG = {
   'development': 'import.dev.js',
   'production': 'import.prod.js'
 }
 
-const importComponent = require("./" + ENV_CONFIG[CURRENT_ENV])
+const importComponent = require('./' + ENV_CONFIG[CURRENT_ENV])
 
 Vue.use(Router)
-
-/* Layout */
-import MainLayout from '@/layouts/MainLayout'
 
 export const constantRouterMap = [
   { path: '/login', component: importComponent('app/login/index'), hidden: true, name: 'login' },
