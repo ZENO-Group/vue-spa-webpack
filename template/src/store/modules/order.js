@@ -11,7 +11,10 @@ const app = {
 
   actions: {
     SaveActiveOrderId ({ commit }, payload) {
-      commit('SET_ACTIVE_ORDER_ID', payload)
+      return new Promise((resolve, reject) => {
+        commit('SET_ACTIVE_ORDER_ID', payload)
+        resolve()
+      })
     }
   }
 }

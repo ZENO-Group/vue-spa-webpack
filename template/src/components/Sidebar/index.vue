@@ -9,12 +9,13 @@
         @close="handleClose"
         background-color="#fff"
         text-color="#000"
-        active-text-color="#000">
-        <el-menu-item index="1">
+        active-text-color="#000"
+        router>
+        <el-menu-item index="/order/list">
           <template slot="title">
             <i class="el-icon-mobile-phone
 "></i>
-            <el-badge :value="200" :max="99" >
+            <el-badge :value="200" :max="99">
               <div>Orders</div>
             </el-badge>
           </template>

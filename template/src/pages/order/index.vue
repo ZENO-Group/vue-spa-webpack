@@ -7,14 +7,14 @@
 export default {
   components: {},
   props: {},
-  data() {
+  data () {
     return {}
   },
   computed: {},
   methods: {},
-  created() {
+  created () {
   },
-  mounted() {
+  mounted () {
   }
 }
 </script>
