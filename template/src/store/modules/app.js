@@ -31,7 +31,6 @@ const app = {
       commit('SET_USE_BREADCRUMB', payload)
     },
     ChangeCurrentRoute ({ commit }, payload) {
-
       let { matched } = payload
 
       let copied = []
@@ -41,8 +40,13 @@ const app = {
           meta: item.meta
         })
       })
-      console.log('copied', copied)
-      commit('SET_CURRENT_ROUTE', copied)
+      copied[0] = {
+        path: '/dashboard',
+        meta: {
+          display: 'Home'
+        }
+      }
+      commit('SET_CURRENT_ROUTE', copied[copied.length - 1].path === '/dashboard' ? [] : copied)
     }
   }
 }

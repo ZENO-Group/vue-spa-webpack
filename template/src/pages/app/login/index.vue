@@ -49,7 +49,7 @@ export default {
         this.showError = false
         this.$router.replace('/')
       }, 500)
-      //this.$router.replace('/')
+      // this.$router.replace('/')
     }
   },
   created () {

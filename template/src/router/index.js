@@ -26,7 +26,8 @@ export const constantRouterMap = [
       {
         path: 'dashboard',
         component: importComponent('dashboard/index'),
-        name: 'dashboard'
+        name: 'dashboard',
+        meta: { title: '', icon: '', display: 'Home' }
       },
       {
         path: 'order',

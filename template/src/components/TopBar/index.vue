@@ -15,12 +15,12 @@
 export default {
   components: {},
   props: {},
-  data() {
+  data () {
     return {}
   },
   computed: {},
   methods: {
-    logout() {
+    logout () {
       this.$store.dispatch('FedLogOutToLogin')
     }
   },

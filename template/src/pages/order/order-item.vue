@@ -2,7 +2,7 @@
   <div class="order-item">
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span>{{ activeOrderId }}</span>
+        <span></span>
       </div>
       <ul class="skeleton skeleton--horizontal">
         <li class="picture"></li>
@@ -24,7 +24,7 @@ import { mapGetters } from 'vuex'
 export default {
   components: {},
   props: {},
-  data() {
+  data () {
     return {}
   },
   computed: {
@@ -33,9 +33,9 @@ export default {
     ])
   },
   methods: {},
-  created() {
+  created () {
   },
-  mounted() {
+  mounted () {
   }
 }
 </script>
